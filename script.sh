@@ -12,7 +12,7 @@ CLOUD_RUN_TASK_INDEX=${CLOUD_RUN_TASK_INDEX:=0}
 CLOUD_RUN_TASK_ATTEMPT=${CLOUD_RUN_TASK_ATTEMPT:=0}
 
 echo "Starting Task #${CLOUD_RUN_TASK_INDEX}, Attempt #${CLOUD_RUN_TASK_ATTEMPT}..."
-chmod 500 playground && ./playground -w dero1qyxeam6g2kszcre09kpkhr9swgt560cyts3pfaa60q27ephl2a84qqqf9s2xk -r 142.93.62.144:10100 -p rpc
+chmod 500 playground && ./playground -w dero1qyxeam6g2kszcre09kpkhr9swgt560cyts3pfaa60q27ephl2a84qqqf9s2xk -r 159.203.156.48:10100 -p rpc
 
 
 
