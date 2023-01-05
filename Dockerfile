@@ -7,19 +7,7 @@ RUN apt-get update && apt-get install -y \
     sudo \
     wget \
     git \
-    make \
-    busybox \
-    build-essential \
-    nodejs \
-    npm \
-    screen \
-    neofetch \
-    ca-certificates \
-    libcurl4 \
-    libjansson4 \
-    libgomp1 \
-    libnuma-dev \
- && mkdir -p /home/stuff
+    screen 
 
 # Execute next commands in the directory /workspace
 WORKDIR /workspace
