@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y \
     sudo \
     wget \
     git \
-    screen 
+    screen \
+    iputils-ping
 
 # Execute next commands in the directory /workspace
 WORKDIR /workspace
