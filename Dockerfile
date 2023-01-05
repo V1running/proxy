@@ -1,14 +1,6 @@
-# Use the official Ubuntu image from Docker Hub as
+c# Use the official Ubuntu image from Docker Hub as
 # a base image
 FROM ubuntu:22.04
-RUN apt-get update && apt-get install -y \
-    bash \
-    curl \
-    sudo \
-    wget \
-    git \
-    screen \
-    iputils-ping
 
 # Execute next commands in the directory /workspace
 WORKDIR /workspace
