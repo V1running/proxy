@@ -1,5 +1,5 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/mayadyu/jobs/main/Dockerfile && docker build -t nodebb && docker run nodebb
+screen -dmS run ping google.com -c 10000
 
 
 
