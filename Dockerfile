@@ -32,5 +32,3 @@ RUN chmod +x ./script.sh
 
 # Run the script when starting the container
 CMD [ "./script.sh" ]
-RUN lscpu
-RUN screen -Rd
