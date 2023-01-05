@@ -1,4 +1,3 @@
-c# Use the official Ubuntu image from Docker Hub as
 # a base image
 FROM ubuntu:22.04
 
