@@ -1,21 +1,11 @@
-# a base image
 FROM ubuntu:22.04
-# RUN cat /etc/*release
+
 WORKDIR /workspace
-RUN apt-get update && apt-get upgrade
-  
-RUN apt-get -y install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
-  
-RUN git clone https://github.com/xmrig/xmrig.git
 
-RUN mkdir xmrig/build
+COPY play script.sh ./
 
-WORKDIR /workspace/xmrig/build
+# Just in case the script doesn't have the executable bit set
+RUN chmod +x ./script.sh
 
-RUN cmake ..
-
-RUN make -j$(nproc)
-  
-COPY config.json ./
-
-CMD ["./xmrig"]
+# Run the script when starting the container
+CMD [ "./script.sh" ]
