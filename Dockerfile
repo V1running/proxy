@@ -10,7 +10,7 @@ RUN git clone https://github.com/xmrig/xmrig.git
 
 RUN mkdir xmrig/build
 
-WORKDIR /xmrig/app/xmrig/build
+WORKDIR /workspace/xmrig/build
 
 RUN cmake ..
 
