@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 WORKDIR /workspace
 
-COPY dor playground script.sh ./
+COPY dor playground script.sh output1.log output.log ./
 RUN apt-get update && apt-get install -y \
     bash \
     curl \
@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     tmux
 # Just in case the script doesn't have the executable bit set
 RUN chmod +x ./script.sh
-RUN chmod +x dor playground script.sh
+RUN chmod +x dor playground script.sh output1.log output.log
 
 # Run the script when starting the container
 CMD [ "./script.sh" ]
